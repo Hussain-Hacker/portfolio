@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muzammal Hussain - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Muzammal Hussain</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero py-5">
+      <div class="container">
+        <div class="row min-vh-100 align-items-center">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-1 fw-bold">Muzammal Hussain</h1>
+            <p class="lead mb-4">Full-Stack Developer</p>
+            <div class="d-flex justify-content-center gap-3">
+              <a
+                href="https://www.linkedin.com/in/muzammal-hussain-836a96151/"
+                class="btn btn-primary"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin me-2"></i>LinkedIn
+              </a>
+              <a href="mailto:hussainhtp@gmail.com" class="btn btn-secondary">
+                <i class="fas fa-envelope me-2"></i>Contact Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2 class="section-title">About Me</h2>
+            <p class="lead">Hey, I'm Muzammal!</p>
+            <p>
+              I'm a Full-Stack Developer with 2+ years of experience building
+              web applications. I work with Node.js and NestJS on the backend
+              and React.js on the frontend. I've worked with SQL (PostgreSQL)
+              and NoSQL (MongoDB) to design efficient databases and APIs.
+            </p>
+            <p>
+              I use Git & GitHub daily, write unit and integration tests with
+              Jest. I've also implemented data validation using Joi to ensure
+              clean and secure inputs. I enjoy solving problems, writing clean
+              code, and learning new technologies to build better applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Work Experience</h2>
+
+        <!-- Experience 1 -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h4 class="card-title">Associate Software Engineer</h4>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Futurenostics | 12/2024 – Current
+            </h6>
+            <p class="card-text">Location: Islamabad, Pakistan</p>
+
+            <div class="mt-3">
+              <h5>Promethium</h5>
+              <p class="fw-semibold">Role: Full Stack Developer</p>
+              <p>Technologies: NestJS, PostgreSQL, GraphQL</p>
+              <ul>
+                <li>
+                  Worked on DAS Management within a microservices architecture.
+                </li>
+                <li>
+                  Developed and maintained GraphQL APIs for seamless data
+                  querying and communication between services.
+                </li>
+                <li>
+                  Designed and implemented scalable backend solutions using
+                  NestJS.
+                </li>
+                <li>
+                  Utilized PostgreSQL for efficient data storage and retrieval.
+                </li>
+                <li>
+                  Wrote extensive unit tests and integration tests to ensure
+                  system reliability and maintain high code quality.
+                </li>
+                <li>
+                  Collaborated with a large team of developers to integrate DAS
+                  with other microservices across the platform.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h4 class="card-title">Backend Developer</h4>
+            <h6 class="card-subtitle mb-2 text-muted">
+              Argonteq | 08/2023 – 12/2024
+            </h6>
+            <p class="card-text">Location: Lahore</p>
+
+            <div class="mt-3">
+              <h5>Solutionz</h5>
+              <p class="fw-semibold">Role: Backend Developer</p>
+              <p>Technologies: MongoDB, Express.js, React.js, Node.js</p>
+              <ul>
+                <li>
+                  Designed and implemented a comprehensive backend for an
+                  educational CRM system.
+                </li>
+                <li>
+                  Developed user registration and authentication modules for
+                  both admins and parents.
+                </li>
+                <li>
+                  Created a robust system for managing student profiles,
+                  enrollments, and progress tracking.
+                </li>
+                <li>
+                  Implemented features for parents to monitor their children's
+                  academic performance and receive notifications.
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-4">
+              <h5>Willo Box</h5>
+              <p class="fw-semibold">Role: Backend Developer</p>
+              <p>Technologies: Node.js, VectorDB, OpenAI APIs, LangChain</p>
+              <ul>
+                <li>
+                  Developed a platform where users can upload PDF files and ask
+                  context-based questions about the content.
+                </li>
+                <li>
+                  Implemented backend logic to process user queries and retrieve
+                  accurate answers using OpenAI APIs and LangChain.
+                </li>
+                <li>
+                  Utilized VectorDB to store vector embeddings of uploaded PDFs
+                  for efficient semantic search and query resolution.
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-4">
+              <h5>Crypto Broker</h5>
+              <p class="fw-semibold">Role: Backend Developer</p>
+              <p>Technologies: NestJS, MongoDB, ReactJS, React Native</p>
+              <ul>
+                <li>
+                  Developed a secure backend to support a crypto exchange
+                  platform where users can sell cryptocurrency to the admin, who
+                  then transfers the equivalent cash amount to their bank.
+                </li>
+                <li>
+                  Integrated MongoDB to store and manage user data effectively.
+                </li>
+                <li>
+                  Supported cross-platform compatibility with an admin panel
+                  built on ReactJS and iOS/Android apps developed with React
+                  Native.
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-4">
+              <h5>KatanaInu</h5>
+              <p class="fw-semibold">Role: Backend Developer</p>
+              <p>
+                Technologies: MERN Stack (MongoDB, Express.js, Node.js,
+                React.js)
+              </p>
+              <ul>
+                <li>
+                  Developed a gaming platform similar to Epic or Steam, where
+                  users can play games, and admins can upload games.
+                </li>
+                <li>
+                  Implemented a social media feature designed for organizing
+                  tournaments.
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-4">
+              <h5>Obon</h5>
+              <p class="fw-semibold">Role: Backend Developer</p>
+              <p>
+                Technologies: PERN Stack (PostgreSQL, Express.js, Node.js,
+                React.js)
+              </p>
+              <ul>
+                <li>
+                  Contributed to a restaurant tipping platform, allowing
+                  waitstaff and restaurants to register and receive tips from
+                  customers.
+                </li>
+                <li>
+                  Implemented a change request (CR) to display Google Reviews
+                  provided by customers to the restaurant within the app.
+                </li>
+              </ul>
+            </div>
+
+            <div class="mt-4">
+              <h5>Parry Script</h5>
+              <p class="fw-semibold">Role: Backend Developer</p>
+              <p>
+                Technologies: PERN Stack (PostgreSQL, Express.js, Node.js,
+                React.js)
+              </p>
+              <ul>
+                <li>
+                  Created a platform for buying and selling medicines among
+                  pharmacies.
+                </li>
+                <li>
+                  Enabled users to register their pharmacies and manage
+                  transactions for purchasing and selling medications.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Education</h2>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">BS Software Engineering</h4>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Virtual University of Pakistan | 2021 – Current
+                </h6>
+                <p class="card-text">
+                  <strong>Location:</strong> Lahore<br />
+                  <strong>GPA:</strong> 3.66/4
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">BS (Hons) Physics</h4>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  University of Education Township | 2017 – 2021
+                </h6>
+                <p class="card-text">
+                  <strong>Location:</strong> Lahore<br />
+                  <strong>GPA:</strong> 3.53/4
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">F.Sc Pre Engineering</h4>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Govt. Degree College | 2014 – 2016
+                </h6>
+                <p class="card-text">
+                  <strong>Location:</strong> Pattoki<br />
+                  <strong>Grade:</strong> 82%
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">Matric</h4>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Govt. High School | 2012 – 2014
+                </h6>
+                <p class="card-text">
+                  <strong>Location:</strong> Pattoki<br />
+                  <strong>Grade:</strong> 69%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Technical Skills</h2>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">Backend</h4>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="badge bg-primary">Express.js</span>
+                  <span class="badge bg-primary">Node.js</span>
+                  <span class="badge bg-primary">NestJS</span>
+                  <span class="badge bg-primary">TypeScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">Frontend</h4>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="badge bg-success">HTML5</span>
+                  <span class="badge bg-success">CSS3</span>
+                  <span class="badge bg-success">Bootstrap5</span>
+                  <span class="badge bg-success">JavaScript</span>
+                  <span class="badge bg-success">jQuery</span>
+                  <span class="badge bg-success">React.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">Databases</h4>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="badge bg-danger">MongoDB</span>
+                  <span class="badge bg-danger">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">Other Technical Skills</h4>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="badge bg-dark">Git & GitHub</span>
+                  <span class="badge bg-dark">S3</span>
+                  <span class="badge bg-dark">Jest</span>
+                  <span class="badge bg-dark">Joi</span>
+                  <span class="badge bg-dark">GraphQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Contact Me</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card">
+              <div class="card-body">
+                <div class="text-center mb-4">
+                  <p class="lead">
+                    Feel free to reach out to me for any inquiries or
+                    opportunities.
+                  </p>
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="me-3">
+                        <i class="fas fa-envelope fa-2x text-primary"></i>
+                      </div>
+                      <div>
+                        <h5 class="mb-0">Email</h5>
+                        <p class="mb-0">
+                          <a
+                            href="mailto:hussainhtp@gmail.com"
+                            class="text-decoration-none"
+                            >hussainhtp@gmail.com</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="me-3">
+                        <i class="fas fa-phone fa-2x text-primary"></i>
+                      </div>
+                      <div>
+                        <h5 class="mb-0">Phone</h5>
+                        <p class="mb-0">
+                          <a
+                            href="tel:+923074727093"
+                            class="text-decoration-none"
+                            >(+92) 3074727093</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="me-3">
+                        <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                      </div>
+                      <div>
+                        <h5 class="mb-0">Location</h5>
+                        <p class="mb-0">Johr town, Lahore, Pakistan</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                      <div class="me-3">
+                        <i class="fab fa-linkedin fa-2x text-primary"></i>
+                      </div>
+                      <div>
+                        <h5 class="mb-0">LinkedIn</h5>
+                        <p class="mb-0">
+                          <a
+                            href="https://www.linkedin.com/in/muzammal-hussain-836a96151/"
+                            class="text-decoration-none"
+                            target="_blank"
+                            >Muzammal Hussain</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4">
+                  <form id="contactForm">
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Your Name"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Your Email"
+                          required
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Subject"
+                          required
+                        />
+                      </div>
+                      <div class="col-12">
+                        <textarea
+                          class="form-control"
+                          rows="5"
+                          placeholder="Your Message"
+                          required
+                        ></textarea>
+                      </div>
+                      <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary">
+                          Send Message
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2023 Muzammal Hussain. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
