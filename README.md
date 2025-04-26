@@ -1,42 +1,54 @@
-# Muzammal Hussain - Portfolio
+# React + TypeScript + Vite
 
-A clean, responsive portfolio website built with HTML, Bootstrap 5, and JavaScript to showcase my skills, experience, and projects.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- Responsive design that works on all devices
-- Clean and modern UI with Bootstrap 5
-- Smooth scrolling navigation
-- Interactive contact form
-- Animated elements on scroll
-- Organized sections for about, experience, education, and skills
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## How to Use
+## Expanding the ESLint configuration
 
-1. Clone this repository to your local machine
-2. Open `index.html` in your web browser to view the portfolio
-3. Customize the content in `index.html` to match your information
-4. Modify styles in `styles.css` to change the appearance if needed
-5. Extend functionality in `script.js` as required
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## Deployment
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-This portfolio can be deployed to GitHub Pages:
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-1. Push your code to a GitHub repository
-2. Go to repository settings
-3. Navigate to "Pages" section
-4. Select the branch to deploy (usually `main` or `master`)
-5. Save the changes and wait for the deployment to complete
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-## Technologies Used
-
-- HTML5
-- CSS3
-- Bootstrap 5
-- JavaScript
-- Font Awesome Icons
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    'react-x': reactX,
+    'react-dom': reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs['recommended-typescript'].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+})
+```
